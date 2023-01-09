@@ -16,7 +16,7 @@
   height: 800px;
   background-color: rgba(255, 255, 255, 0.434);
 }
-.home div a {
+.home div .arrow {
   border: 2px solid white;
   border-radius: 50%;
   font-size: 3em;
@@ -25,7 +25,7 @@
   top: 60%;
   left: 50%;
 }
-.home div a:hover {
+.home div .arrow:hover {
   background-color: white;
   color: gray;
 }
@@ -40,7 +40,7 @@
 .home .contact {
   padding: 20px;
 }
-.home .contact button {
+.home .contact-btn {
   font-size: 1.5em;
   position: absolute;
   top: 60%;
@@ -51,6 +51,43 @@
   border: none;
   padding: 12px;
   border-radius: 30px;
+}
+
+.nav {
+  background-color: #88a8c0;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 1000;
+  visibility: hidden;
+  overflow-x: hidden;
+}
+.nav .contact-itens ul li {
+  list-style: none;
+  margin: 30px;
+}
+.nav .contact-itens ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.797);
+  padding: 12px;
+  margin: 8px;
+  border-radius: 30px;
+  width: 180px;
+  text-align: center;
+}
+.nav .contact-itens ul li a:hover {
+  border: 2px solid #2f2f2f;
+  background-color: white;
+  color: #2f2f2f;
+}
+.nav.ativar {
+  width: 20vw;
+  visibility: visible;
+  overflow-x: auto;
 }
 
 .projects {
