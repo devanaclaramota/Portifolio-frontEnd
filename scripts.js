@@ -3,14 +3,14 @@ const h1 = document.querySelector('.txt');
 function digitacao(texto, contador) {
   if (contador < texto.length) {
     setTimeout(() => {
-      h1.textContent += texto.charAt(contador);
+      h1.innerHTML += texto.charAt(contador);
       contador++;
       digitacao(texto, contador);
     }, 89);
   }
 }
 
-digitacao("Oi, sou Ana. Desenvolvedora front-end.", 0);
+digitacao(`Oi, sou Ana. Desenvolvedora front-end.`, 0);
 
 //animação da pagina
 

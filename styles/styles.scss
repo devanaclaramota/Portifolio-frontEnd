@@ -13,9 +13,9 @@
     background-size: cover;
     height: 800px;
 
-    div {
+    &-content{
         height: 800px;
-        background-color: rgba(255, 255, 255, 0.434);
+        background-color: rgba(255, 255, 255, 0.186);
 
         .arrow {
             border: 2px solid white;
@@ -32,7 +32,7 @@
             }
         }
 
-        h1 {
+        .txt{
             color: rgb(240, 240, 240);
             font-size: 4em;
             font-family: 'Roboto', sans-serif;
@@ -41,10 +41,9 @@
             top: 20%;
         }
 
-    } .contact {
-
+    } 
+    .contact {
         padding: 20px;
-
         &-btn {
             font-size: 1.5em;
             position: absolute;
@@ -90,12 +89,6 @@
 
 
     }
-    @media(max-width:676px){
-        h1{
-            color: red;
-        }
-    }
-
 }
 main{
     background-image: radial-gradient(circle at 23.05% 11.51%, #7fada7 0, #7dadab 3.33%, #7cacaf 6.67%, #7cacb3 10%, #7dacb6 13.33%, #7eabb9 16.67%, #81aabc 20%, #84a9be 23.33%, #88a8c0 26.67%, #8ca7c1 30%, #91a6c2 33.33%, #96a4c2 36.67%, #9ba3c1 40%, #a1a2c0 43.33%, #a6a0be 46.67%, #ab9fbc 50%, #b09eb9 53.33%, #b49db6 56.67%, #b89cb3 60%, #bb9baf 63.33%, #be9aab 66.67%, #c09aa7 70%, #c29aa3 73.33%, #c39a9f 76.67%, #c49a9b 80%, #c39a97 83.33%, #c39b93 86.67%, #c19c90 90%, #bf9d8d 93.33%, #bd9e8b 96.67%, #ba9f89 100%);
@@ -196,6 +189,9 @@ main{
             width: 70%;
             padding: 10px;
         }
+
+
+
     }
     
     ul{
@@ -233,6 +229,7 @@ footer{
     font-size: 1.2em;
     text-align: center;
 }
+
 }
 [data-anime]{
     opacity: 0;
@@ -246,10 +243,97 @@ footer{
     opacity: 1;
     transform: translate3d(0px,0px,0px)
 }
+@media(max-width:500px){
+    .home{
+        &-content{
+             .txt{
+            text-align: center;
+            margin: 0px;
+            color: rgb(240, 240, 240);
+            font-size: 2em;
+            font-family: 'Roboto', sans-serif;
+            top: 20%;
+        }
+        }
+         .contact {
+            padding: 20px;
+            
+        
+            &-btn {
+                font-size: 1.5em;
+                background-color: transparent;
+                width: 200px;
+                color: rgb(79, 79, 79);
+                border: 2px solid #c49a9b;
+                padding: 12px;
+                border-radius: 20px;
+                margin-left: 15%;
+                &:hover{
+                    background-color: #96a4c2;
+                    color: rgb(79,79,79);
+                }
+    
+            }
+            .modal{
+                width: 350px;
+            }
+        }
+        }
+        main{
+            
+            .about{
+                
 
-@media (max-width:575px ){
- footer{
-    background-color: red;
+                span{
+                padding-left: 50px;
+                font-size: 1.6em;
+                
+                }
+                .content{
+                    display: block;
+                    padding: 20px;
+                    p{
+                        width: 90%;
+                        margin: auto;
+                    }
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+            .projects{
 
+                ul{
+                    display: block;
+                    width: 100%;
+                    li{
+                        width: 80%;
+                    
+                    }
+                }
+            }
+            .skils{
+                display: block;
+              ul{
+                width: 300px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                li{
+                     
+                    img{
+                        width: 40px;
+                    }
+                }
+              }  
+            }
+       
+        }
  }
-}
+                
+          
+        
+            
+    
+
+   
+    

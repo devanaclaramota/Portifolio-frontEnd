@@ -12,11 +12,11 @@
   background-size: cover;
   height: 800px;
 }
-.home div {
+.home-content {
   height: 800px;
-  background-color: rgba(255, 255, 255, 0.434);
+  background-color: rgba(255, 255, 255, 0.186);
 }
-.home div .arrow {
+.home-content .arrow {
   border: 2px solid white;
   border-radius: 50%;
   font-size: 3em;
@@ -25,11 +25,11 @@
   top: 60%;
   left: 50%;
 }
-.home div .arrow:hover {
+.home-content .arrow:hover {
   background-color: white;
   color: gray;
 }
-.home div h1 {
+.home-content .txt {
   color: rgb(240, 240, 240);
   font-size: 4em;
   font-family: "Roboto", sans-serif;
@@ -78,11 +78,6 @@
 }
 .home .contact .modal-body li a:hover {
   color: white;
-}
-@media (max-width: 676px) {
-  .home h1 {
-    color: red;
-  }
 }
 
 main {
@@ -223,8 +218,66 @@ main footer {
   transform: translate3d(0px, 0px, 0px);
 }
 
-@media (max-width: 575px) {
-  footer {
-    background-color: red;
+@media (max-width: 500px) {
+  .home-content .txt {
+    text-align: center;
+    margin: 0px;
+    color: rgb(240, 240, 240);
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    top: 20%;
+  }
+  .home .contact {
+    padding: 20px;
+  }
+  .home .contact-btn {
+    font-size: 1.5em;
+    background-color: transparent;
+    width: 200px;
+    color: rgb(79, 79, 79);
+    border: 2px solid #c49a9b;
+    padding: 12px;
+    border-radius: 20px;
+    margin-left: 15%;
+  }
+  .home .contact-btn:hover {
+    background-color: #96a4c2;
+    color: rgb(79, 79, 79);
+  }
+  .home .contact .modal {
+    width: 350px;
+  }
+  main .about span {
+    padding-left: 50px;
+    font-size: 1.6em;
+  }
+  main .about .content {
+    display: block;
+    padding: 20px;
+  }
+  main .about .content p {
+    width: 90%;
+    margin: auto;
+  }
+  main .about .content img {
+    width: 80%;
+  }
+  main .projects ul {
+    display: block;
+    width: 100%;
+  }
+  main .projects ul li {
+    width: 80%;
+  }
+  main .skils {
+    display: block;
+  }
+  main .skils ul {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .skils ul li img {
+    width: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
