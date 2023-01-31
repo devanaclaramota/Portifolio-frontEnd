@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .home {
@@ -89,6 +90,11 @@
 
 
     }
+    @media(max-width:676px){
+        h1{
+            color: red;
+        }
+    }
 
 }
 main{
@@ -98,12 +104,12 @@ main{
   h2{
     padding-top: 60px;
     padding-left: 60px;
-    font-size: 2.1em;
+    font-size: 3.5em;
     color: silver;
   }
   span{
     padding-left: 130px;
-    font-size: 1.7em;
+    font-size: 2.1em;
     color: silver;
   }
     .content{
@@ -174,13 +180,24 @@ main{
 .skils{
     padding: 40px;
     display: flex;
-    h2 {
+    justify-content: space-around;
+    &-details{
+        
+        h2 {
         padding: 30px;
         color: silver;
         font-size: 3.5em;
         text-align: center;
         width: 60%;
+        }
+        p{
+            font-size: 1.5em;
+            color: #4d4d4d;
+            width: 70%;
+            padding: 10px;
+        }
     }
+    
     ul{
         max-width: 40%;
         padding: 40px;
@@ -201,7 +218,8 @@ main{
                 }
                 &:hover{
                     background-color: transparent;
-                    cursor: pointer;
+                    border: 2px solid white;
+                    
                 }
         }
     }
@@ -215,4 +233,23 @@ footer{
     font-size: 1.2em;
     text-align: center;
 }
+}
+[data-anime]{
+    opacity: 0;
+    transition: .6s;
+
+}
+[data-anime="rigth"]{
+    transform: translate3d(50px, 0, 0 );
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px)
+}
+
+@media (max-width:575px ){
+ footer{
+    background-color: red;
+
+ }
 }

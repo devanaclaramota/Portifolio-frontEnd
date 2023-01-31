@@ -79,6 +79,11 @@
 .home .contact .modal-body li a:hover {
   color: white;
 }
+@media (max-width: 676px) {
+  .home h1 {
+    color: red;
+  }
+}
 
 main {
   background-image: radial-gradient(circle at 23.05% 11.51%, #7fada7 0, #7dadab 3.33%, #7cacaf 6.67%, #7cacb3 10%, #7dacb6 13.33%, #7eabb9 16.67%, #81aabc 20%, #84a9be 23.33%, #88a8c0 26.67%, #8ca7c1 30%, #91a6c2 33.33%, #96a4c2 36.67%, #9ba3c1 40%, #a1a2c0 43.33%, #a6a0be 46.67%, #ab9fbc 50%, #b09eb9 53.33%, #b49db6 56.67%, #b89cb3 60%, #bb9baf 63.33%, #be9aab 66.67%, #c09aa7 70%, #c29aa3 73.33%, #c39a9f 76.67%, #c49a9b 80%, #c39a97 83.33%, #c39b93 86.67%, #c19c90 90%, #bf9d8d 93.33%, #bd9e8b 96.67%, #ba9f89 100%);
@@ -86,12 +91,12 @@ main {
 main .about h2 {
   padding-top: 60px;
   padding-left: 60px;
-  font-size: 2.1em;
+  font-size: 3.5em;
   color: silver;
 }
 main .about span {
   padding-left: 130px;
-  font-size: 1.7em;
+  font-size: 2.1em;
   color: silver;
 }
 main .about .content {
@@ -159,13 +164,20 @@ main .projects ul li:hover {
 main .skils {
   padding: 40px;
   display: flex;
+  justify-content: space-around;
 }
-main .skils h2 {
+main .skils-details h2 {
   padding: 30px;
   color: silver;
   font-size: 3.5em;
   text-align: center;
   width: 60%;
+}
+main .skils-details p {
+  font-size: 1.5em;
+  color: #4d4d4d;
+  width: 70%;
+  padding: 10px;
 }
 main .skils ul {
   max-width: 40%;
@@ -187,7 +199,7 @@ main .skils ul li img {
 }
 main .skils ul li:hover {
   background-color: transparent;
-  cursor: pointer;
+  border: 2px solid white;
 }
 main footer {
   background-color: #3f3f3f;
@@ -195,4 +207,24 @@ main footer {
   padding: 40px;
   font-size: 1.2em;
   text-align: center;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.6s;
+}
+
+[data-anime=rigth] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 575px) {
+  footer {
+    background-color: red;
+  }
 }/*# sourceMappingURL=styles.css.map */
