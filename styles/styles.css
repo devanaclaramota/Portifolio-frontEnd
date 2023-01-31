@@ -43,109 +43,156 @@
 .home .contact-btn {
   font-size: 1.5em;
   position: absolute;
-  top: 60%;
+  background-color: transparent;
+  top: 50%;
   left: 20%;
   width: 200px;
-  background-color: #2f2f2f;
+  color: rgb(79, 79, 79);
+  border: 2px solid #c49a9b;
+  padding: 12px;
+  border-radius: 20px;
+}
+.home .contact-btn:hover {
+  background-color: #96a4c2;
+  color: rgb(79, 79, 79);
+}
+.home .contact .modalfade, .home .contact .modal-content, .home .contact .modal-dialog {
+  max-height: 350px;
+}
+.home .contact .modal-header {
+  background-color: #3f3f3f;
+  height: 100px;
   color: silver;
-  border: none;
-  padding: 12px;
-  border-radius: 30px;
+  font-size: 1.3em;
 }
-
-.nav {
-  background-color: #88a8c0;
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 100%;
-  transition: 0.6s;
-  z-index: 1000;
-  visibility: hidden;
-  overflow-x: hidden;
+.home .contact .modal-body {
+  background-color: #4d4d4d;
 }
-.nav .contact-itens ul li {
-  list-style: none;
-  margin: 30px;
+.home .contact .modal-body li {
+  color: silver;
+  font-size: 1.5em;
+  padding: 10px;
 }
-.nav .contact-itens ul li a {
-  text-decoration: none;
+.home .contact .modal-body li a {
+  color: silver;
+}
+.home .contact .modal-body li a:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.797);
-  padding: 12px;
-  margin: 8px;
-  border-radius: 30px;
-  width: 180px;
-  text-align: center;
-}
-.nav .contact-itens ul li a:hover {
-  border: 2px solid #2f2f2f;
-  background-color: white;
-  color: #2f2f2f;
-}
-.nav.ativar {
-  width: 20vw;
-  visibility: visible;
-  overflow-x: auto;
 }
 
-.projects {
+main {
   background-image: radial-gradient(circle at 23.05% 11.51%, #7fada7 0, #7dadab 3.33%, #7cacaf 6.67%, #7cacb3 10%, #7dacb6 13.33%, #7eabb9 16.67%, #81aabc 20%, #84a9be 23.33%, #88a8c0 26.67%, #8ca7c1 30%, #91a6c2 33.33%, #96a4c2 36.67%, #9ba3c1 40%, #a1a2c0 43.33%, #a6a0be 46.67%, #ab9fbc 50%, #b09eb9 53.33%, #b49db6 56.67%, #b89cb3 60%, #bb9baf 63.33%, #be9aab 66.67%, #c09aa7 70%, #c29aa3 73.33%, #c39a9f 76.67%, #c49a9b 80%, #c39a97 83.33%, #c39b93 86.67%, #c19c90 90%, #bf9d8d 93.33%, #bd9e8b 96.67%, #ba9f89 100%);
 }
-.projects h2 {
+main .about h2 {
+  padding-top: 60px;
+  padding-left: 60px;
+  font-size: 2.1em;
+  color: silver;
+}
+main .about span {
+  padding-left: 130px;
+  font-size: 1.7em;
+  color: silver;
+}
+main .about .content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+main .about .content p {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.3607843137);
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+main .about .content img {
+  width: 50%;
+}
+main .projects {
+  padding: 40px;
+}
+main .projects .link-git {
+  display: block;
+  text-align: center;
+  padding: 30px;
+  color: rgb(90, 90, 90);
+}
+main .projects .link-git:hover {
+  color: silver;
+}
+main .projects h2 {
   padding: 30px;
   color: silver;
   font-size: 2.5em;
   text-align: center;
 }
-.projects ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
-  padding: 20px;
+main .projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.projects ul li {
-  padding: 30px 0px 30px 16px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.219);
+main .projects ul li {
+  padding: 30px;
+  margin-bottom: 20px;
+  width: 30%;
   list-style: none;
-}
-.projects ul li .modal-icon {
-  display: block;
-  padding-top: 12px;
-  margin-left: 40%;
-  font-size: 2em;
-}
-.projects ul li img {
-  width: 400px;
-}
-.projects ul li h3 {
-  color: black;
-  text-align: center;
-}
-.projects ul li .modal {
-  background-color: rgba(224, 224, 224, 0.256);
-}
-.projects ul li .modal-content {
-  background-color: rgb(82, 82, 82);
-  color: silver;
-}
-.projects ul li .modal-content-header .btn-close {
-  color: silver;
-}
-.projects ul li .modal-footer button {
   border: 2px solid silver;
-  padding: 12px;
 }
-.projects ul li .modal-footer button:hover {
-  background-color: silver;
+main .projects ul li h3 {
+  text-align: center;
+  color: #4d4d4d;
 }
-.projects ul li .modal-footer a {
-  font-size: 18px;
-  text-decoration: none;
+main .projects ul li p {
+  color: #4d4d4d;
+}
+main .projects ul li a {
+  color: #4d4d4d;
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+main .projects ul li:hover {
+  background-color: rgba(255, 255, 255, 0.434);
+}
+main .skils {
+  padding: 40px;
+  display: flex;
+}
+main .skils h2 {
+  padding: 30px;
   color: silver;
+  font-size: 3.5em;
+  text-align: center;
+  width: 60%;
 }
-.projects ul li .modal-footer a:hover {
-  color: black;
+main .skils ul {
+  max-width: 40%;
+  padding: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+main .skils ul li {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  list-style: none;
+  padding: 30px;
+}
+main .skils ul li img {
+  width: 60px;
+}
+main .skils ul li:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+main footer {
+  background-color: #3f3f3f;
+  color: silver;
+  padding: 40px;
+  font-size: 1.2em;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
