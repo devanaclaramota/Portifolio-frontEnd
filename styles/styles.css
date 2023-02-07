@@ -191,6 +191,7 @@ main .skils ul li {
 }
 main .skils ul li img {
   width: 60px;
+  border: 1px solid transparent;
 }
 main .skils ul li:hover {
   background-color: transparent;
